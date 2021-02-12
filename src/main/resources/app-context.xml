@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+        "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+    <bean id="AddressBookFrame" class="Veiw" init-method="init">
+        <property name="contentPane">
+            <ref bean="mainPanel"/>
+        </property>
+        <property name="title">
+            <value>My AddressBook</value>
+        </property>
+    </bean>
+    <bean id="mainPanel" class=
+            "BoxLayoutPanel" init-method="init">
+        <property name="axis">
+            <!--  "1" corresponds to BoxLayout.Y_AXIS -->
+            <!--  Spring can access constants, but it's more complex -->
+            <value>1</value>
+        </property>
+        <property name="panelComponents">
+            <list>
+                <ref bean="buttonPanel"/>
+            </list>
+        </property>
+    </bean>
+    <bean id="buttonPanel" class=
+            "Panel" init-method="init">
+    </bean>
+
+</beans>

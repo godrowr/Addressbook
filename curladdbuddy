@@ -1,0 +1,1 @@
+curl -i -H "Content-Type:application/json" -d '{"name": "Bilbo", "phonenumber": "613-2XX-XXXX" }' http://localhost:8080/buddyinfos
