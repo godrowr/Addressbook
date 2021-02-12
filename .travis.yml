@@ -3,4 +3,4 @@ script: mvn clean verify
 deploy:
   provider: heroku
   api_key: $HEROKU_API_KEY
-  app: lippep-spring-boot-test
+  app: addressbook-godrowr
